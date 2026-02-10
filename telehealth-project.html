@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Telehealth | Project Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .telehealth-hero {
+            padding: 10rem 10% 6rem;
+            background: linear-gradient(135deg, var(--white) 0%, var(--primary-bg) 100%);
+            text-align: center;
+        }
+
+        .telehealth-hero h1 {
+            font-family: var(--font-heading);
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent-dark);
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background: #4DA3FF20;
+            color: var(--accent-blue);
+            padding: 0.6rem 2rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 1px solid var(--accent-blue);
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 4rem;
+            padding: 4rem 10%;
+            align-items: start;
+        }
+
+        .detail-content h2 {
+            font-family: var(--font-heading);
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--accent-dark);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .detail-content p {
+            font-size: 18px;
+            line-height: 1.9;
+            letter-spacing: 1.4px;
+            color: var(--text-main);
+            margin-bottom: 2rem;
+        }
+
+        .tech-box {
+            background: var(--white);
+            padding: 3.5rem;
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(16, 40, 94, 0.08);
+            border: 1px solid var(--border-color);
+            position: sticky;
+            top: 120px;
+        }
+
+        .tech-box h3 {
+            font-family: var(--font-heading);
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--accent-dark);
+            margin-bottom: 2rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .tech-feature {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .tech-feature i {
+            font-size: 2.5rem;
+            color: var(--accent-blue);
+            width: 50px;
+        }
+
+        .tech-feature-text h4 {
+            font-family: var(--font-heading);
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--accent-dark);
+            margin-bottom: 0.3rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .tech-feature-text p {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin: 0;
+            opacity: 0.8;
+        }
+
+        .abstract-section {
+            background: linear-gradient(135deg, var(--white) 0%, var(--secondary-bg) 100%);
+            color: var(--text-main);
+            padding: 8rem 10%;
+            border-radius: 40px;
+            margin: 6rem 5%;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 30px 60px rgba(16, 40, 94, 0.05);
+        }
+
+        .abstract-section h2 {
+            font-family: var(--font-heading);
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent-dark);
+            margin-bottom: 2.5rem;
+            text-align: center;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .abstract-text {
+            font-size: 18px;
+            line-height: 2.1;
+            letter-spacing: 1.4px;
+            color: var(--text-main);
+            text-align: justify;
+            max-width: 100%;
+        }
+
+        .back-nav {
+            padding: 3rem 10% 0;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: var(--accent-dark);
+            text-decoration: none;
+            font-weight: 700;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            color: var(--accent-blue);
+            transform: translateX(-8px);
+        }
+
+        @media screen and (max-width: 1024px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .abstract-text {
+                column-count: 1;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .telehealth-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .detail-grid,
+            .abstract-section {
+                padding: 3rem 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO.</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <div class="back-nav">
+            <a href="projects.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+        </div>
+
+        <section class="telehealth-hero">
+            <span class="status-badge">Ongoing Project</span>
+            <h1>AI Telehealth Consultation</h1>
+            <p style="font-size: 1.3rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto;">
+                Revolutionizing remote healthcare through empathetic, precise, and user-centered AI interactions.
+            </p>
+        </section>
+
+        <section class="detail-grid">
+            <div class="detail-content">
+                <h2>The Challenge</h2>
+                <p>Current telehealth systems often fall short in understanding a patient's emotional state during
+                    virtual interactions. They lack intelligent mechanisms to recommend the most suitable providers,
+                    creating gaps in personalization and holistic care delivery.</p>
+
+                <h2>Our Solution</h2>
+                <p>This project introduces an AI-driven system capable of analyzing emotional, behavioral, and clinical
+                    cues in real-time. By fusing multimodal data, we build a comprehensive profile that represents both
+                    emotional and physical indicators, ensuring patients are matched with specialists who best fit their
+                    medical requirements and emotional comfort levels.</p>
+
+                <h2>Key Architectures</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong style="color: var(--primary-color);">Multimodal Emotion Transformer (MET):</strong>
+                        Interpret emotional states by automatically capturing facial expressions post-login.
+                    </li>
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong style="color: var(--primary-color);">Conformer Architecture:</strong>
+                        Processes spoken responses through highly accurate speech-to-text conversion.
+                    </li>
+                    <li style="margin-bottom: 1.5rem;">
+                        <strong style="color: var(--primary-color);">Med-BERT:</strong>
+                        A domain-specific language model designed to extract medical meaning and identify symptoms.
+                    </li>
+                </ul>
+            </div>
+
+            <aside class="tech-box">
+                <h3>Technical Stack</h3>
+                <div class="tech-feature">
+                    <i class="fas fa-brain"></i>
+                    <div class="tech-feature-text">
+                        <h4>Emotion AI</h4>
+                        <p>Multimodal Emotion Transformer (MET)</p>
+                    </div>
+                </div>
+                <div class="tech-feature">
+                    <i class="fas fa-microphone-alt"></i>
+                    <div class="tech-feature-text">
+                        <h4>Speech Processing</h4>
+                        <p>Conformer Architecture (STT)</p>
+                    </div>
+                </div>
+                <div class="tech-feature">
+                    <i class="fas fa-stethoscope"></i>
+                    <div class="tech-feature-text">
+                        <h4>Clinical NLP</h4>
+                        <p>Med-BERT Sentiment Analysis</p>
+                    </div>
+                </div>
+                <div class="tech-feature">
+                    <i class="fas fa-users-cog"></i>
+                    <div class="tech-feature-text">
+                        <h4>Recommendation Engine</h4>
+                        <p>Neural Collaborative Filtering (NCF)</p>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="abstract-section">
+            <h2>Project Abstract</h2>
+            <div class="abstract-text">
+                Telehealth has expanded remote access to healthcare, allowing patients to connect with providers from
+                anywhere. However, current systems still fall short in understanding a patient’s emotional state during
+                virtual interactions. They also lack intelligent mechanisms to recommend the most suitable doctor. This
+                creates gaps in personalization and holistic care delivery. To overcome these limitations, this project
+                introduces an AI-driven telehealth system capable of analyzing emotional, behavioral, and clinical cues
+                in real time. After the patient logs in, the platform automatically captures facial expressions and
+                interprets emotional states using the Multimodal Emotion Transformer (MET). The system then asks
+                symptom-based questions, and the patient’s spoken responses are processed through the Conformer
+                architecture for highly accurate speech-to-text conversion. The generated text is analyses using
+                Med-BERT, a domain-specific language model designed to extract medical meaning, identify symptoms, and
+                understand the patient’s clinical context. In addition, the system continuously monitors emotional
+                fluctuations throughout the interaction, enabling deeper insights into the patient’s psychological
+                state. The analyzed data is fused to build a comprehensive multimodal profile that represents both
+                emotional and physical indicators. Based on this combined understanding, the system uses Neural
+                Collaborative Filtering (NCF) to deliver highly personalized doctor recommendations. This ensures
+                patients are matched with specialists who best fit their medical requirements and emotional comfort
+                levels. The platform also incorporates secure communication and real-time response assessment for
+                seamless teleconsultations, while its feedback-learning mechanism continuously improves recommendation
+                accuracy. Ultimately, the system elevates remote healthcare by providing a more empathetic, precise, and
+                user-centered telehealth experience.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gracy V. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

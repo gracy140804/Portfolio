@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress Projects | Gracy V</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-detail-section {
+            padding: 8rem 10% 4rem;
+            background-color: var(--primary-bg);
+        }
+
+        .project-detail-card {
+            background: var(--white);
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(16, 40, 94, 0.08);
+            margin-bottom: 6rem;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--border-color);
+        }
+
+        .project-detail-img {
+            width: 100%;
+            height: 450px;
+            background-size: cover;
+            background-position: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .project-detail-content {
+            padding: 4rem;
+        }
+
+        .project-detail-content h2 {
+            font-family: var(--font-heading);
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent-dark);
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .project-detail-content p {
+            font-size: 18px;
+            line-height: 1.9;
+            letter-spacing: 1.4px;
+            color: var(--text-main);
+            margin-bottom: 2rem;
+        }
+
+        .tech-list {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tech-item {
+            background: #4DA3FF15;
+            color: var(--accent-blue);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            border: 1px solid #4DA3FF30;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: var(--accent-dark);
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            transition: var(--transition);
+        }
+
+        .back-btn:hover {
+            color: var(--accent-blue);
+            transform: translateX(-8px);
+        }
+
+        @media screen and (max-width: 768px) {
+            .project-detail-section {
+                padding: 6rem 5% 2rem;
+            }
+
+            .project-detail-img {
+                height: 300px;
+            }
+
+            .project-detail-content {
+                padding: 2.5rem;
+            }
+
+            .project-detail-content h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO.</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <section class="project-detail-section">
+            <div class="container">
+                <a href="projects.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                <h1 class="v3-title" style="text-align: center; margin-bottom: 4rem;">Internship WordPress Projects</h1>
+
+                <!-- Sweet Heaven -->
+                <article class="project-detail-card">
+                    <div class="project-detail-img"
+                        style="background-image: url('images/sweet_heaven_bakery.png'); background-size: contain; background-repeat: no-repeat; background-color: #3e2723;">
+                    </div>
+                    <div class="project-detail-content">
+                        <h2>Sweet Heaven – Bakery Website</h2>
+                        <div class="tech-list">
+                            <span class="tech-item">WordPress</span>
+                            <span class="tech-item">Elementor</span>
+                            <span class="tech-item">WooCommerce (Basics)</span>
+                            <span class="tech-item">Responsive Design</span>
+                        </div>
+                        <p>Sweet Heaven is a delightful bakery website designed to showcase a variety of baked goods,
+                            from cakes to pastries. Built during my internship, this project involved creating a
+                            visually appealing layout that complements the bakery's brand. I used Elementor to build
+                            custom page sections, including a product gallery, a detailed contact page, and an
+                            interactive menu. The site is fully responsive, ensuring a seamless experience for users
+                            browsing on mobile or desktop.</p>
+                    </div>
+                </article>
+
+                <!-- Call Taxi -->
+                <article class="project-detail-card">
+                    <div class="project-detail-img"
+                        style="background-image: url('images/call_taxi.png'); background-size: contain; background-repeat: no-repeat; background-color: #fdd835;">
+                    </div>
+                    <div class="project-detail-content">
+                        <h2>Call Taxi – Service Website</h2>
+                        <div class="tech-list">
+                            <span class="tech-item">WordPress</span>
+                            <span class="tech-item">Theme Customization</span>
+                            <span class="tech-item">Booking Form</span>
+                            <span class="tech-item">SEO Basics</span>
+                        </div>
+                        <p>Call Taxi is a professional service-oriented website developed for a local taxi business. The
+                            primary focus of this project was usability and quick access to information. I implemented a
+                            streamlined booking request system and integrated Google Maps for easy location tracking.
+                            The project helped me sharpen my skills in theme customization and plugin integration,
+                            ensuring that the final product met the client's business needs while maintaining a clean,
+                            modern aesthetic.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Gracy V. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
